@@ -1,134 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egbert Mamadi - Portfolio</title>
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <!-- Header / Hero Section -->
-      <header class="hero">
-        <h1>Egbert Mamadi</h1>
-        <p class="tagline">Software Engineering Student | Problem Solver | Tech Enthusiast</p>
-        <div class="social-links">
-          <a href="#">GitHub</a>
-          <a href="https://www.linkedin.com/in/egberty-mamadi-5006b1243/" target="_blank">LinkedIn</a>
-          <a href="#">Twitter</a>
-        </div>
-      </header>
 
-      <!-- About Section -->
-      <section class="about">
-        <h2>About Me</h2>
-        <p>
-          I am a dedicated Software Engineering student passionate about building innovative solutions 
-          and continuously improving my technical skills. I combine problem-solving abilities with 
-          critical thinking to tackle complex challenges. When I'm not coding, you can find me 
-          reading, exercising, or playing football.
-        </p>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Egbert Mamadi - Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
-      <!-- Skills Section -->
-      <section class="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Programming Languages</h3>
-            <ul>
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Tools & Technologies</h3>
-            <ul>
-              <li>Git</li>
-              <li>VS Code</li>
-              <li>Linux</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
-          <div class="skill-category">
-            <h3>Soft Skills</h3>
-            <ul>
-              <li>Problem Solving</li>
-              <li>Critical Thinking</li>
-              <li>Team Leadership</li>
-              <li>Communication</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+<body>
+  <div class="cinematic-background" aria-hidden="true">
+    <div class="cinematic-layer cinematic-layer-a theme-aurora"></div>
+    <div class="cinematic-layer cinematic-layer-b theme-midnight"></div>
+  </div>
 
-      <!-- Projects Section -->
-      <section class="projects">
-        <h2>Projects</h2>
-        <div class="project-cards">
-          <article class="project-card">
-            <h3>Project Title 1</h3>
-            <p>Description of the project. What technologies used and what problem it solves.</p>
-            <a href="#">View Project</a>
-          </article>
-          <article class="project-card">
-            <h3>Project Title 2</h3>
-            <p>Description of the project. What technologies used and what problem it solves.</p>
-            <a href="#">View Project</a>
-          </article>
-          <article class="project-card">
-            <h3>Project Title 3</h3>
-            <p>Description of the project. What technologies used and what problem it solves.</p>
-            <a href="#">View Project</a>
-          </article>
-        </div>
-      </section>
+  <button class="sidebar-toggle" type="button" aria-label="Open navigation" aria-controls="portfolio-sidebar"
+    aria-expanded="false">
+    <span aria-hidden="true">☰</span>
+  </button>
 
-      <!-- Education Section -->
-      <section class="education">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>Bachelor of Commerce (Accounting)</h3>
-          <p>Kenyatta University | 2022</p>
-          <h3>Bachelor of Science in Software Engineering</h3>
-          <p>University Name | Expected Graduation Year</p>
-        </div>
-      </section>
+  <div class="sidebar-backdrop" aria-hidden="true"></div>
 
-      <!-- Goals Section -->
-      <section class="goals">
-        <h2>Goals</h2>
-        <div class="goals-content">
-          <div class="goal">
-            <h3>Short-term Goals</h3>
-            <p>Graduate with excellent grades and secure an internship at a reputable tech company.</p>
-          </div>
-          <div class="goal">
-            <h3>Long-term Goals</h3>
-            <p>Become a full-stack developer and eventually start my own tech company that provides solutions to everyday problems.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
-        <a href="mailto:mamadegbert@gmail.com" class="contact-btn">Get In Touch</a>
-      </section>
-
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2024 Egbert Mamadi. All rights reserved.</p>
-        <p>
-          <a href="https://www.google.com">Google</a> | 
-          <a href="https://github.com/madi94EM">GitHub</a> | 
-          <a href="https://www.linkedin.com/in/egberty-mamadi-5006b1243/" target="_blank">LinkedIn</a>
-        </p>
-      </footer>
+  <aside class="portfolio-sidebar" id="portfolio-sidebar" aria-label="Portfolio navigation">
+    <div class="sidebar-header">
+      <span class="sidebar-mark" aria-hidden="true">E</span>
+      <span class="sidebar-title">Portfolio</span>
+      <button class="sidebar-collapse" type="button" aria-label="Collapse navigation" aria-expanded="true">
+        <span aria-hidden="true">‹</span>
+      </button>
     </div>
-  </body>
-</html>
+    <nav class="sidebar-nav">
+      <a href="#home" class="sidebar-link active" aria-label="Dashboard">
+        <span class="sidebar-icon" aria-hidden="true">⌂</span>
+        <span class="sidebar-label">Dashboard</span>
+      </a>
+      <a href="#about" class="sidebar-link" aria-label="About Me">
+        <span class="sidebar-icon" aria-hidden="true">♙</span>
+        <span class="sidebar-label">About Me</span>
+      </a>
+      <a href="#skills" class="sidebar-link" aria-label="Skills">
+        <span class="sidebar-icon" aria-hidden="true">⌘</span>
+        <span class="sidebar-label">Skills</span>
+      </a>
+      <a href="#projects" class="sidebar-link" aria-label="Projects">
+        <span class="sidebar-icon" aria-hidden="true">◆</span>
+        <span class="sidebar-label">Projects</span>
+      </a>
+      <a href="#education" class="sidebar-link" aria-label="Education">
+        <span class="sidebar-icon" aria-hidden="true">▣</span>
+        <span class="sidebar-label">Education</span>
+      </a>
+      <a href="#goals" class="sidebar-link" aria-label="Goals">
+        <span class="sidebar-icon" aria-hidden="true">↗</span>
+        <span class="sidebar-label">Goals</span>
+      </a>
+      <a href="#contact" class="sidebar-link" aria-label="Contact">
+        <span class="sidebar-icon" aria-hidden="true">@</span>
+        <span class="sidebar-label">Contact</span>
+      </a>
+    </nav>
+  </aside>
 
+  <div class="container">
+    <!-- Header / Hero Section -->
+    <header class="hero reveal" id="home">
+      <div class="hero-content">
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <span class="eyebrow">Software Engineer • Student • Builder</span>
+            <h1>Egbert Mamadi</h1>
+            <p class="tagline">I build clear, practical digital experiences with a strong focus on user value,
+              problem-solving, and thoughtful design.</p>
+            <div class="hero-actions">
+              <a href="#projects" class="hero-action hero-action-primary">View My Projects</a>
+              <a href="#contact" class="hero-action hero-action-secondary">Download CV</a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/madi94EM">GitHub</a>
+              <a href="https://www.linkedin.com/in/egberty-mamadi-5006b1243/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://x.com/MEgberty">Twitter</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img src="../coding-station.jpg" alt="A modern coding workstation with a laptop and monitor">
+          </div>
+        </div>
+
+        <div class="hero-status" aria-label="Current focus">
+          <div>
+            <span>Currently</span>
+            <strong>Software Engineering Student</strong>
+          </div>
+          <div>
+            <span>Focus</span>
+            <strong>Web Development • UI/UX • Problem Solving</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about reveal" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a dedicated Software Engineering student passionate about building innovative solutions
+        and continuously improving my technical skills. I combine problem-solving abilities with
+        critical thinking to tackle complex challenges. When I'm not coding, you can find me
+        reading, exercising, or playing football.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills reveal" id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category card reveal">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-category card reveal">
+          <h3>Tools & Technologies</h3>
+          <ul>
+            <li>Git</li>
+            <li>VS Code</li>
+            <li>Linux</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+        <div class="skill-category card reveal">
+          <h3>Soft Skills</h3>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Critical Thinking</li>
+            <li>Team Leadership</li>
+            <li>Communication</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects reveal" id="projects">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <article class="project-card card reveal">
+          <h3>Project Title 1</h3>
+          <p>Description of the project. What technologies used and what problem it solves.</p>
+          <a href="#">View Project</a>
+        </article>
+        <article class="project-card card reveal">
+          <h3>Project Title 2</h3>
+          <p>Description of the project. What technologies used and what problem it solves.</p>
+          <a href="#">View Project</a>
+        </article>
+        <article class="project-card card reveal">
+          <h3>Project Title 3</h3>
+          <p>Description of the project. What technologies used and what problem it solves.</p>
+          <a href="#">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education reveal" id="education">
+      <h2>Education</h2>
+      <div class="education-item card reveal">
+        <h3>Bachelor of Commerce (Accounting)</h3>
+        <p>Kenyatta University | 2022</p>
+        <h3>Bachelor of Science in Software Engineering</h3>
+        <p>University Name | Expected Graduation Year</p>
+      </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="goals reveal" id="goals">
+      <h2>Goals</h2>
+      <div class="goals-content">
+        <div class="goal card reveal">
+          <h3>Short-term Goals</h3>
+          <p>Graduate with excellent grades and secure an internship at a reputable tech company.</p>
+        </div>
+        <div class="goal card reveal">
+          <h3>Long-term Goals</h3>
+          <p>
+            Become a full-stack developer and eventually start my own tech company that provides solutions to everyday
+            problems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact reveal" id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations or just a friendly chat!</p>
+      <a href="mailto:mamadegbert@gmail.com" class="contact-btn">Get In Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; <span id="year"></span> Egbert Mamadi. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="../JS/portfolio.js"></script>
+</body>
+
+</html>
